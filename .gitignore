@@ -98,4 +98,5 @@ ENV/
 # Rope project settings
 .ropeproject
 .idea
+*.p
 
