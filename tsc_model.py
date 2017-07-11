@@ -17,9 +17,9 @@ import tsc_utils as tu
 X_train = tu.preprocess_data(X_train)
 X_valid = tu.preprocess_data(X_valid)
 
-_ = tu.train_model(X_train, y_train, X_valid, y_valid, X_valid, y_valid,
-                   model=tu.lenet, model_params=tu.params_big_lenet, learning_rate=0.001)
+#_ = tu.train_model(X_train, y_train, X_valid, y_valid, X_valid, y_valid,
+#                   model=tu.lenet, model_params=tu.params_big_lenet, learning_rate=0.001)
 
 
 _ = tu.train_model(X_train, y_train, X_valid, y_valid, X_valid, y_valid,
-                   model=tu.sermanet(), model_params=tu.params_sermanet_big, learning_rate=0.001)
+                   model=tu.sermanet, model_params=tu.params_sermanet_big, learning_rate=0.001)
